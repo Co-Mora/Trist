@@ -12,7 +12,7 @@ import SwiftUI
 
 struct Shop: Identifiable {
     let id = UUID()
-    let imgURL: String
+    let image: String
     let name: String
 }
 
@@ -21,7 +21,11 @@ extension Shop {
     
     static func all() -> [Shop] {
         return [
-            Shop(imgURL: "tunai", name: "Tunai Salon")
+            Shop(image: "tunai", name: "Tunai Salon"),
+            Shop(image: "tunai", name: "Tunai Salon"),
+            Shop(image: "tunai", name: "Tunai Salon"),
+            Shop(image: "tunai", name: "Tunai Salon")
+
         ]
     }
 }

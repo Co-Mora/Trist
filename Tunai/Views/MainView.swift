@@ -20,39 +20,22 @@ struct MainView : View {
             TabView {
                 VStack(spacing: 20) {
                     Group {
-                        ScrollView (.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(shops) { shop in
-                                    Image(shop.imgURL)
-                                        .resizable()
-                                        .frame(width:80, height:80)
-                                        .padding(5)
-                                        .clipShape(Circle())
-                                    
-                                }
-                            }
-                        }.frame(height: 100)
 
-
+                        ShopsList(shops: shops)
                     }.padding()
                     
                     FeaturedShop()
-                   
-                    
                 }.tabItem {
                     Image(systemName: "1.circle")
-                    Text("First")
                 }.tag(0)
-                
-                Text("Second View")
+                    
+                    RegisterView()
                     .tabItem {
-                        Image(systemName: "2.circle")
-                        Text("Second")
+                        Image(systemName: "2.square")
                     }.tag(1)
                 Text("Third View")
                     .tabItem {
                         Image(systemName: "2.circle")
-                        Text("Third")
                     }.tag(1)
                 
             }.navigationBarTitle(Text("Tunai"), displayMode: .inline)
@@ -62,6 +45,32 @@ struct MainView : View {
     
 }
 
+
+
+
+#if DEBUG
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}
+#endif
+
+struct ShopsList: View {
+    let shops: [Shop]
+    
+    var body: some View {
+        ScrollView (.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(shops) { shop in
+                    MerchantList(shop: shop)
+                }
+            }
+        }.frame(height: 100)
+        
+       
+    }
+}
 
 
 struct FeaturedShop: View {
@@ -112,11 +121,14 @@ struct ShowPost: View {
     }
 }
 
-#if DEBUG
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
+struct MerchantList: View {
+    var shop: Shop
+    var body: some View {
+        Image(shop.image)
+            .resizable()
+            .frame(width:80, height:80)
+            .padding(5)
+            .clipShape(Circle())
+        
     }
 }
-
-#endif

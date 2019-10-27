@@ -20,6 +20,11 @@
 		848A3F9F236572F7005606E0 /* SmsVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3F9E236572F7005606E0 /* SmsVerification.swift */; };
 		848A3FA12365926A005606E0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FA02365926A005606E0 /* Shop.swift */; };
 		848A3FA3236593C4005606E0 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FA2236593C4005606E0 /* ShopViewModel.swift */; };
+		848A3FA52365A9DC005606E0 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FA42365A9DC005606E0 /* Register.swift */; };
+		848A3FA72365C1B7005606E0 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FA62365C1B7005606E0 /* ShopDetailView.swift */; };
+		848A3FA92365CCEC005606E0 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FA82365CCEC005606E0 /* Merchant.swift */; };
+		848A3FAB2365DDF6005606E0 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FAA2365DDF6005606E0 /* RegisterService.swift */; };
+		848A3FAD2365DE8B005606E0 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A3FAC2365DE8B005606E0 /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		848A3F9E236572F7005606E0 /* SmsVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsVerification.swift; sourceTree = "<group>"; };
 		848A3FA02365926A005606E0 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		848A3FA2236593C4005606E0 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		848A3FA42365A9DC005606E0 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		848A3FA62365C1B7005606E0 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
+		848A3FA82365CCEC005606E0 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		848A3FAA2365DDF6005606E0 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		848A3FAC2365DE8B005606E0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +166,7 @@
 				848A3F9A2365712F005606E0 /* RegisterView.swift */,
 				848A3F9C23657186005606E0 /* MainView.swift */,
 				848A3F9E236572F7005606E0 /* SmsVerification.swift */,
+				848A3FA62365C1B7005606E0 /* ShopDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				848A3FA02365926A005606E0 /* Shop.swift */,
+				848A3FA42365A9DC005606E0 /* Register.swift */,
+				848A3FA82365CCEC005606E0 /* Merchant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +184,7 @@
 		848A3F98236570F9005606E0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				848A3FAA2365DDF6005606E0 /* RegisterService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				848A3FA2236593C4005606E0 /* ShopViewModel.swift */,
+				848A3FAC2365DE8B005606E0 /* RegisterViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -315,10 +330,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				848A3F9F236572F7005606E0 /* SmsVerification.swift in Sources */,
+				848A3FA72365C1B7005606E0 /* ShopDetailView.swift in Sources */,
 				848A3F6923656F42005606E0 /* Tunai.xcdatamodeld in Sources */,
 				848A3F9B2365712F005606E0 /* RegisterView.swift in Sources */,
+				848A3FA52365A9DC005606E0 /* Register.swift in Sources */,
 				848A3F6423656F42005606E0 /* AppDelegate.swift in Sources */,
+				848A3FAB2365DDF6005606E0 /* RegisterService.swift in Sources */,
 				848A3FA3236593C4005606E0 /* ShopViewModel.swift in Sources */,
+				848A3FAD2365DE8B005606E0 /* RegisterViewModel.swift in Sources */,
+				848A3FA92365CCEC005606E0 /* Merchant.swift in Sources */,
 				848A3FA12365926A005606E0 /* Shop.swift in Sources */,
 				848A3F9D23657186005606E0 /* MainView.swift in Sources */,
 				848A3F6623656F42005606E0 /* SceneDelegate.swift in Sources */,
