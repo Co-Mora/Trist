@@ -26,7 +26,7 @@ struct MainView : View {
                     
                     FeaturedShop()
                 }.tabItem {
-                    Image(systemName: "1.circle")
+                    Image(systemName: "star.fill")
                 }.tag(0)
                     
                     RegisterView()
@@ -124,11 +124,15 @@ struct ShowPost: View {
 struct MerchantList: View {
     var shop: Shop
     var body: some View {
-        Image(shop.image)
+        NavigationLink(destination: ShopDetailView()) {
+            Image(shop.image)
             .resizable()
             .frame(width:80, height:80)
             .padding(5)
             .clipShape(Circle())
+        }.buttonStyle(PlainButtonStyle())
+
+        
         
     }
 }
